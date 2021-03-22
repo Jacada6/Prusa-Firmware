@@ -55,6 +55,9 @@ int target_temperature_bed = 0;
 int current_temperature_raw[EXTRUDERS] = { 0 };
 float current_temperature[EXTRUDERS] = { 0.0 };
 
+struct altfanS altfanStatus = {1,1,192};
+
+
 #ifdef PINDA_THERMISTOR
 uint16_t current_temperature_raw_pinda =  0 ; //value with more averaging applied
 uint16_t current_temperature_raw_pinda_fast = 0; //value read from adc
@@ -152,14 +155,6 @@ uint8_t fanSpeedBckp = 255;
   
   bool fan_measuring = false;
   uint8_t fanState = 0;
-#ifdef EXTRUDER_ALTFAN_DETECT
-  struct
-  {
-    uint8_t isAltfan : 1;
-    uint8_t altfanOverride : 1;
-    uint8_t altfanSpeed : EXTRUDER_ALTFAN_SPEED_SILENT;
-  } altfanStatus;
-#endif //EXTRUDER_ALTFAN_DETECT
 #endif
 
 

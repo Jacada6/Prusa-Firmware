@@ -60,6 +60,16 @@ extern float current_temperature[EXTRUDERS];
 extern int target_temperature_bed;
 extern float current_temperature_bed;
 
+struct altfanS
+{
+   uint8_t isAltfan;
+   uint8_t altfanOverride;
+   uint8_t altfanSpeed;
+};
+
+extern altfanS altfanStatus;
+  
+
 #ifdef PINDA_THERMISTOR
 extern uint16_t current_temperature_raw_pinda;
 extern float current_temperature_pinda;
