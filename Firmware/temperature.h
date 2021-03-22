@@ -64,7 +64,7 @@ struct altfanS
 {
    uint8_t isAltfan;
    uint8_t altfanOverride;
-   uint8_t altfanSpeed;
+   int altfanSpeed;
 };
 
 extern altfanS altfanStatus;
