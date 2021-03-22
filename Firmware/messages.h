@@ -34,6 +34,7 @@ extern const char MSG_FANS_CHECK[];
 extern const char MSG_FIL_RUNOUTS[];
 extern const char MSG_FILAMENT[];
 extern const char MSG_FAN_SPEED[];
+extern const char MSG_ALTFAN_SPEED[];
 extern const char MSG_FILAMENT_CLEAN[];
 extern const char MSG_FILAMENT_LOADED[];
 extern const char MSG_FILAMENT_LOADING_T0[];

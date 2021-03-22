@@ -157,6 +157,7 @@ uint8_t fanSpeedBckp = 255;
   {
     uint8_t isAltfan : 1;
     uint8_t altfanOverride : 1;
+    uint8_t altfanSpeed : EXTRUDER_ALTFAN_SPEED_SILENT;
   } altfanStatus;
 #endif //EXTRUDER_ALTFAN_DETECT
 #endif
@@ -526,7 +527,7 @@ void setExtruderAutoFanState(uint8_t state)
 	if (fanState & 0x01)
 	{
 #ifdef EXTRUDER_ALTFAN_DETECT
-		if (altfanStatus.isAltfan && !altfanStatus.altfanOverride) newFanSpeed = EXTRUDER_ALTFAN_SPEED_SILENT;
+		if (altfanStatus.isAltfan && !altfanStatus.altfanOverride) newFanSpeed = altfanStatus.altfanSpeed;
 		else newFanSpeed = EXTRUDER_AUTO_FAN_SPEED;
 #else //EXTRUDER_ALTFAN_DETECT
 		newFanSpeed = EXTRUDER_AUTO_FAN_SPEED;
