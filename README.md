@@ -1,4 +1,4 @@
-# Prusa Firmware MK2S with MK52 keatbed
+# Prusa Firmware MK2S with MK52 heatbed
 
 This is the 3.10.0 RC1 firmware configured to hndle MK52 heatbed and PINDA2 probe. 
 The rest is stock MK2S 
