@@ -19,7 +19,7 @@ GENERAL SETTINGS
 #define DEVELOPER
 
 // Printer name
-#define CUSTOM_MENDEL_NAME "Prusa i3 MK2"
+#define CUSTOM_MENDEL_NAME "i3 MK2S Heatbed V2"
 
 // Electronics
 #define MOTHERBOARD BOARD_RAMBO_MINI_1_3
@@ -70,7 +70,7 @@ AXIS SETTINGS
 #define X_MAX_POS 250
 #define X_MIN_POS 0
 #define Y_MAX_POS 210
-#define Y_MIN_POS -2.2
+#define Y_MIN_POS -4
 #define Z_MAX_POS 210
 #define Z_MIN_POS 0.15
 
@@ -89,11 +89,11 @@ AXIS SETTINGS
 /**
  * [0,0] steel sheet print area point X coordinate in bed print area coordinates
  */
-#define SHEET_PRINT_ZERO_REF_X 0.f
+#define SHEET_PRINT_ZERO_REF_X 2.0f
 /**
  * [0,0] steel sheet print area point Y coordinate in bed print area coordinates
  */
-#define SHEET_PRINT_ZERO_REF_Y 0.f
+#define SHEET_PRINT_ZERO_REF_Y 0.0f
 
 #define DEFAULT_MAX_FEEDRATE          {200, 200, 12, 120}      // (mm/sec)   max feedrate (M203)
 #define DEFAULT_MAX_FEEDRATE_SILENT         {172, 172, 12, 120}      // (mm/sec)   max feedrate (M203), silent mode
@@ -110,7 +110,7 @@ AXIS SETTINGS
 #define Z_AXIS_ALWAYS_ON 1
 
 // New XYZ calibration
-//#define NEW_XYZCAL
+#define NEW_XYZCAL
 
 // Watchdog support
 #define WATCHDOG
@@ -251,10 +251,10 @@ BED SETTINGS
 #define MBL_Z_STEP 0.01
 
 // Mesh definitions
-#define MESH_MIN_X 35
-#define MESH_MAX_X 238
+#define MESH_MIN_X 24
+#define MESH_MAX_X 228
 #define MESH_MIN_Y 6
-#define MESH_MAX_Y 202
+#define MESH_MAX_Y 210
 
 // Mesh upsample definition
 #define MESH_NUM_X_POINTS 7
@@ -266,7 +266,7 @@ BED SETTINGS
 // Maximum bed level correction value
 #define BED_ADJUSTMENT_UM_MAX 100
 
-#define MESH_HOME_Z_CALIB 0.2
+#define MESH_HOME_Z_CALIB 0.15
 #define MESH_HOME_Z_SEARCH 5.0f           // Z lift for homing, mesh bed leveling etc.
 
 #define X_PROBE_OFFSET_FROM_EXTRUDER 23     // Z probe to nozzle X offset: -left  +right
@@ -415,6 +415,7 @@ THERMISTORS SETTINGS
 #else
 #define TEMP_SENSOR_BED 1
 #endif
+#define TEMP_SENSOR_PINDA 1
 
 #define STACK_GUARD_TEST_VALUE 0xA2A2
 

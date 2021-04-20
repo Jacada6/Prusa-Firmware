@@ -5097,7 +5097,7 @@ if(eSoundMode!=e_SOUND_MODE_SILENT)
 #endif // ndef PINDA_THERMISTOR
 
 #ifdef SUPPORT_VERBOSITY
-		int8_t verbosity_level = 0;
+		int8_t verbosity_level = 20;
 		if (code_seen('V')) {
 			// Just 'V' without a number counts as V1.
 			char c = strchr_pointer[1];
@@ -6020,7 +6020,7 @@ if(eSoundMode!=e_SOUND_MODE_SILENT)
     */
     case 45: // M45: Prusa3D: bed skew and offset with manual Z up
     {
-		int8_t verbosity_level = 0;
+		int8_t verbosity_level = 20;
 		bool only_Z = code_seen('Z');
 		#ifdef SUPPORT_VERBOSITY
 		if (code_seen('V'))
