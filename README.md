@@ -1,6 +1,14 @@
-# Prusa Firmware MK3
+# Prusa Firmware MK2S with MK52 keatbed
 
-This repository contains the source code and the development versions of the firmware running on the [Original Prusa i3](https://prusa3d.com/) MK3S/MK3/MK2.5S/MK2.5 line of printers.
+This is the 3.10.0 RC1 firmware configured to hndle MK52 heatbed and PINDA2 probe. 
+The rest is stock MK2S 
+
+If you don't have PINDA2, comment PINDA_TEMP_SENSOR definition in the config file. 
+
+
+
+
+
 
 The latest official builds can be downloaded from [Prusa Drivers](https://www.prusa3d.com/drivers/). Pre-built development releases are also [available here](https://github.com/prusa3d/Prusa-Firmware/releases).
 
