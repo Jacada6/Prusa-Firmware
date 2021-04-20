@@ -1,7 +1,8 @@
 # Prusa Firmware MK2S with MK52 heatbed
 
 This is the 3.10.0 RC1 firmware configured to hndle MK52 heatbed and PINDA2 probe. 
-The rest is stock MK2S 
+use the 1_75mm_MK22-RAMBo13a-E3Dv6full.h variant for Configuration_prusa.h
+The rest of the config is stock MK2S 
 
 If you don't have PINDA2, comment PINDA_TEMP_SENSOR definition in the config file. 
 
