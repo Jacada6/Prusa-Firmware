@@ -19,7 +19,7 @@ GENERAL SETTINGS
 #define DEVELOPER
 
 // Printer name
-#define CUSTOM_MENDEL_NAME "i3 MK2S Heatbed V2"
+#define CUSTOM_MENDEL_NAME "Prusa i3 MK2"
 
 // Electronics
 #define MOTHERBOARD BOARD_RAMBO_MINI_1_3
@@ -266,7 +266,7 @@ BED SETTINGS
 // Maximum bed level correction value
 #define BED_ADJUSTMENT_UM_MAX 100
 
-#define MESH_HOME_Z_CALIB 0.15
+#define MESH_HOME_Z_CALIB 0.2
 #define MESH_HOME_Z_SEARCH 5.0f           // Z lift for homing, mesh bed leveling etc.
 
 #define X_PROBE_OFFSET_FROM_EXTRUDER 23     // Z probe to nozzle X offset: -left  +right
@@ -352,8 +352,8 @@ PREHEAT SETTINGS
 #define PP_PREHEAT_HOTEND_TEMP 254
 #define PP_PREHEAT_HPB_TEMP 100
 
-#define PET_PREHEAT_HOTEND_TEMP 240
-#define PET_PREHEAT_HPB_TEMP 90
+#define PET_PREHEAT_HOTEND_TEMP 230
+#define PET_PREHEAT_HPB_TEMP 80
 
 #define FLEX_PREHEAT_HOTEND_TEMP 230
 #define FLEX_PREHEAT_HPB_TEMP 50
@@ -428,9 +428,14 @@ THERMISTORS SETTINGS
 #define Z_BABYSTEP_MIN -3999
 #define Z_BABYSTEP_MAX 0
 
+#define PINDA_PREHEAT_X 20
+#define PINDA_PREHEAT_Y 60
+#define PINDA_PREHEAT_Z 0.15
+/*
 #define PINDA_PREHEAT_X 70
 #define PINDA_PREHEAT_Y -3
 #define PINDA_PREHEAT_Z 1
+*/
 #define PINDA_HEAT_T 120 //time in s
 
 #define PINDA_MIN_T 50
@@ -461,7 +466,7 @@ THERMISTORS SETTINGS
 
 #define MMU_REQUIRED_FW_BUILDNR 132
 
-#define SUPPORT_VERBOSITY
+//#define SUPPORT_VERBOSITY
 
 #define MMU_IDLER_SENSOR_ATTEMPTS_NR 21 //max. number of attempts to load filament if first load failed; value for max bowden length and case when loading fails right at the beginning
 
