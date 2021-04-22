@@ -35,6 +35,8 @@
 //#define E3D_PT100_EXTRUDER_NO_AMP
 //#define E3D_PT100_BED_WITH_AMP
 //#define E3D_PT100_BED_NO_AMP
+//
+#define BEAR_CALIB_OFFSET -7.0
 
 
 /*------------------------------------
